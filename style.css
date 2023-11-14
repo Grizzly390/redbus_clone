@@ -1,0 +1,1273 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar{
+    height: 88px;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    background-color: #FFFFFF;
+    z-index: 1;
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+}
+
+.navdiv{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.logoimg{
+    margin-left: 60px;
+    height: 44px;
+}
+
+
+.header{
+    display:flex;
+    gap: 10px;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.header img{
+    filter: brightness(0%);
+}
+
+.header_list{
+    height: 75px;
+    list-style: none;
+    filter: grayscale(1);
+    padding: 14px 10px;
+    border-radius: 10px;
+}
+
+.header_list h5{
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.header_list:hover{
+    filter: grayscale(0);
+    cursor: pointer;
+    background-color: #d6d4d4;
+}
+
+.verticle_seperator{
+    border-left:1px solid #d6d4d4;
+    height: 20px;
+    margin-left: 50px;
+}
+
+.side{
+    /* margin-right: 10%; */
+    display:flex;
+    gap: 50px;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+
+.help{
+    width: 85px;
+    height: 35px;
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 8px;
+    border-radius: 10px;
+    gap: 10px;
+    font-family: 'Montserrat', sans-serif;
+    color: #1d1d1d;
+}
+
+.help:hover{
+    cursor: pointer;
+    background-color: #d6d4d4;
+}
+
+.accnt{
+    display: flex;
+    height: 35px;
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 8px;
+    border-radius: 10px;
+    gap: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.accnt select{
+    border: none;
+}
+
+
+.accnt:hover{
+    cursor: pointer;
+    background-color: #d6d4d4;
+}
+
+.accnt select:hover{
+    cursor: pointer;
+    background-color: #d6d4d4;
+}
+
+.main{
+    background-image: url('https://st.redbus.in/Images/HomeIndia/HeroImage.png');
+    background-repeat: no-repeat;
+    background-size: 100vw 520px;
+}
+
+.content h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 80px;
+    font-size: 32px;
+    line-height: normal;
+    font-weight: 700;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.destinations{
+    background-color: white;
+    display: flex;
+    width: 1000px;
+    justify-content:space-between;
+    align-items: center;
+    margin-left: 20%;
+    border-radius: 20px;
+    border-collapse: collapse;
+    margin-top: 25px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.from{
+    height: 112px;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-right: 1px solid gray;
+    border-collapse: collapse;
+    position: relative;
+    width: 320px;
+    padding-left: 30px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.from img{
+    height: 24px;
+    width: 24px;
+    margin-right: 10px;
+}
+
+.swap{
+    border-radius: 50%;
+    position: absolute; 
+    left: 37%;
+    padding: 10px;
+    border: 1px solid gray;
+}
+
+
+.swap img{
+    height: 22.4px;
+    width: 22px;
+}
+
+
+.off{
+    height: 112px;
+    display: inline-flex;
+    justify-content:flex-start;
+    align-items: center;
+    border-right: 1px solid gray;
+    border-collapse: collapse;
+    width: 320px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.off img{
+    height: 24px;
+    width: 24px;
+    margin-right: 10px; 
+    margin-left: 30px;
+}
+
+.calndr{
+    height: 112px;
+    width: 210px;
+    display: inline-flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.calndr img{
+    height: 24px;
+    width: 24px;
+    margin-right: 10px; 
+    margin-left: 20px;
+}
+
+.search button{
+    height: 112px;
+    width: 243px;
+    background-color: #D84E55;
+    border: none;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.offers{
+    width: 1200px;
+    height: 300px;
+    /* display:flex; */
+    background-color:white;
+    margin-left: 12%;
+    align-items: top;
+    margin-top: 7%;
+    border-radius: 40px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.headings{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.headings span{
+    font-size: 32px;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.headings button{
+    background-color: white;
+    color: rgb(16, 52, 217);
+    border: 1px solid rgb(170, 170, 170);
+    font-size: 18px;
+    font-weight: 600;
+    width: 124px;
+    height: 44px;
+    border-radius: 25px;
+    margin-top: 20px;
+    margin-right: 40px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.cards{
+    display: flex;
+    gap: 10px;
+    overflow-x:auto;
+    overflow-y: hidden;
+    padding: 40px;
+}
+
+.card{
+    width: 1000px;
+    height: 180px;
+    border-radius: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card h4{
+    margin-top: 10px;
+}
+
+.card p{
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+
+.card1{
+    background-image: linear-gradient(71.04deg, rgb(12, 57, 139) -6.92%, rgb(62, 118, 216) 109.43%);
+    padding: 10px;
+}
+
+.card1_content{
+    width: 200px;
+}
+
+.card1_head_button{
+    border-radius: 20px;
+    padding: 0.25rem 0.5rem;
+    background-color: #5078BF;
+    border: none;
+    padding: 5px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card1_card_footer{
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.card1_card_footer button{
+    background-color: #5078BF;
+    border-radius: 5px;
+    padding: 4px 8px;
+    border: dotted;
+    color: white;
+}
+
+.card2{
+    background-image: linear-gradient(71.04deg, rgb(14, 113, 67) -6.92%, rgb(115, 236, 179) 109.43%);
+    padding: 10px;
+}
+
+.card2_content{
+    width: 200px;
+}
+
+.card2_head_button{
+    border-radius: 20px;
+    padding: 0.25rem 0.5rem;
+    background-color: #619994;
+    border: none;
+    padding: 5px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card2_card_footer{
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.card2_card_footer button{
+    background-color: #619994;
+    border-radius: 5px;
+    padding: 4px 8px;
+    border: dotted;
+    color: white;
+}
+
+.card3{
+    background-image: linear-gradient(71.04deg, rgb(72, 0, 4) -6.92%, rgb(216, 78, 85) 109.43%);
+    padding: 10px;
+}
+
+.card3_content{
+    width: 200px;
+}
+
+.card3_head_button{
+    border-radius: 20px;
+    padding: 0.25rem 0.5rem;
+    background-color: #A45155;
+    border: none;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.card3_card_footer{
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.card3_card_footer button{
+    background-color: #A45155;
+    border-radius: 5px;
+    padding: 4px 8px;
+    border: dotted;
+    color: white;
+}
+
+.card4{
+    background-image: linear-gradient(71.04deg, rgb(14, 113, 67) -6.92%, rgb(115, 236, 179) 109.43%);
+    padding: 10px;
+}
+
+.card4_content{
+    width: 200px;
+}
+
+.card4_head_button{
+    border-radius: 20px;
+    padding: 0.25rem 0.5rem;
+    background-color: #65BC93;
+    border: none;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.card4_card_footer{
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.card4_card_footer button{
+    background-color: #65BC93;
+    border-radius: 5px;
+    padding: 4px 8px;
+    border: dotted;
+    color: white;
+}
+
+.card5{
+    background-image: linear-gradient(71.04deg, rgb(24, 125, 151) -6.92%, rgb(109, 213, 237) 109.43%);
+    padding: 10px;
+}
+
+.card5_content{
+    width: 200px;
+}
+
+.card5_head_button{
+    border-radius: 20px;
+    padding: 0.25rem 0.5rem;
+    background-color: #68B9CD;
+    border: none;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.card5_card_footer{
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.card5_card_footer button{
+    background-color: #68B9CD;
+    border-radius: 5px;
+    padding: 4px 8px;
+    border: dotted;
+    color: white;
+}
+
+.card6{
+    background-image: linear-gradient(71.04deg, rgb(206, 119, 0) -6.92%, rgb(255, 194, 111) 109.43%);
+    padding: 10px;
+}
+
+.card6_content{
+    width: 200px;
+}
+
+.card6_head_button{
+    border-radius: 20px;
+    padding: 0.25rem 0.5rem;
+    background-color: #E9AC59;
+    border: none;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.card6_card_footer{
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.card6_card_footer button{
+    background-color: #E9AC59;
+    border-radius: 5px;
+    padding: 4px 8px;
+    border: dotted;
+    color: white;
+}
+
+.card7{
+    background-image: linear-gradient(71.04deg, rgb(134, 0, 62) -6.92%, rgb(210, 81, 141) 109.43%);
+    padding: 10px;
+}
+
+.card7_content{
+    width: 200px;
+}
+
+.card7_head_button{
+    border-radius: 20px;
+    padding: 0.25rem 0.5rem;
+    background-color: #BA5181;
+    border: none;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.card7_card_footer{
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.card7_card_footer button{
+    background-color: #BA5181;
+    border-radius: 5px;
+    padding: 4px 8px;
+    border: dotted;
+    color: white;
+}
+
+.card8{
+    background-image: linear-gradient(71.04deg, rgb(60, 16, 83) -6.92%, rgb(173, 83, 137) 109.43%);
+    padding: 10px;
+}
+
+.card8_content{
+    width: 200px;
+}
+
+.card8_head_button{
+    border-radius: 20px;
+    padding: 0.25rem 0.5rem;
+    background-color: #8C5988;
+    border: none;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.card8_card_footer{
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.card8_card_footer button{
+    background-color: #8C5988;
+    border-radius: 5px;
+    padding: 4px 8px;
+    border: dotted;
+    color: white;
+}
+
+.card9{
+    background-image: linear-gradient(71.04deg, rgb(63, 43, 150) -6.92%, rgb(168, 192, 255) 109.43%);
+    padding: 10px;
+}
+
+.card9_content{
+    width: 200px;
+}
+
+.card9_head_button{
+    border-radius: 20px;
+    padding: 0.25rem 0.5rem;
+    background-color: #8C8DD2;
+    border: none;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.card9_card_footer{
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.card9_card_footer button{
+    background-color: #8C8DD2;
+    border-radius: 5px;
+    padding: 4px 8px;
+    border: dotted;
+    color: white;
+}
+
+.adflyer{
+    background-image: url('https://platforms.makemytrip.com/contents/eb882edd-8d39-4cf1-8d57-a04f6e64f7c1');
+    background-repeat: no-repeat;
+    background-size: 970px 90px;
+    width: 970px;
+    height:90px;
+    margin-top: 70px;
+    border-radius: 10px;
+    margin-left: 18%;
+}
+
+.adflyer img{
+    width: 64px;
+    height: 14px;
+    float: right;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+.more{
+    max-width: 1100px;
+    background-image: url("https://s3.rdbuz.com/web/images/homeV2/AboutUs/aboutUsImg.svg");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    margin-left: 15%;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 30px;
+    margin-top: 100px;
+    position: relative;
+    height: 628px;
+}
+
+.morediv{
+    /* word-spacing: 10px;
+    line-height: 160%; */
+    font-size: 48px;
+    width: 700px;
+}
+
+.options{
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    border-bottom: 1px solid #d6d4d4;
+}
+
+.tagline{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.bus_rental{
+    display: flex;
+    align-items: center;
+    width: 200px;
+    padding-bottom: 10px;
+    border-bottom:3px solid red;
+}
+
+.bus_rental img{
+    width: 50px;
+    height: 28px;
+}
+
+.bus_rental span{
+    width: 200px;
+    margin-left: 10px;
+    color: red;
+    font-size: 16px;
+}
+
+.vs{
+    border-left:1px solid #d6d4d4;
+    height: 30px;
+}
+
+.train{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    padding-bottom: 10px;
+}
+
+.train img{
+    width: 50px;
+    height: 28px;
+    filter: grayscale(1);
+}
+
+.train span{
+    width: 200px;
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    padding-right: 50px;
+}
+
+.options_logo{
+    float: right;
+}
+
+.out{
+    display: flex;
+    align-items: center;
+    padding: 20px 20px 20px 0px;
+}
+
+.out img{
+    width: 80px;
+    height: 40px;
+}
+.out p{
+    margin-left: 10px;
+}
+
+.hour{
+    display:flex;
+    align-items: center;
+    padding: 0px 20px 20px 0px;
+}
+
+.hour img{
+    width: 80px;
+    height: 40px;
+}
+.hour p{
+    margin-left: 10px;
+}
+
+.air{
+    display: flex;
+    align-items: center;
+    padding: 0px 20px 20px 0px;
+}
+
+.air img{
+    width: 80px;
+    height: 40px;
+}
+.air p{
+    margin-left: 10px;
+}
+
+.book{
+    padding:0.9rem  1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    border: none;
+    background-color: #D84E55;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: white;
+    font-weight: 700;
+    margin-top: 25px;
+}
+
+.enjoy{
+    background-image: url("https://s1.rdbuz.com/web/images/homeV2/appinstall/appInstallbg.svg");
+    background-repeat: no-repeat;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 100px;
+    margin: 150px;
+    height: 418px;
+}
+
+.enjoydiv{
+    color: white;
+    padding: 20px;
+    font-size: 2.5rem;
+    margin-left: 20px;
+}
+
+.rating{
+    background-color: white;
+    width: 376px;
+    height: 274px;
+    border-radius: 20px;
+    margin: 20px;
+    margin-left: 40px;
+}
+
+.quick {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 10px;
+    padding-top: 50px;
+    padding-left: 30px;
+}
+
+.quick img{
+    width: 22px;
+    height:22px;
+}
+
+.live {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    padding-left: 30px;
+}
+
+.live img{
+    width: 22px;
+    height:22px;
+}
+
+.rate{
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+.store{
+    display: flex;
+    justify-content: space-around;
+    line-height: 25px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 30px;
+}
+
+.store p{
+    font-size: 14px;
+}
+
+
+.vl{
+    border-left: 3px solid #C1C1C1;
+    height: 74px;
+}
+
+.scan{
+    width: 106px;
+    color: white;
+}
+.scanhead{
+    font-size: 16px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+.scan img{
+    width: 106px;
+    height: 106px;
+}
+
+.app{
+    width: 147px;
+    height: 155px;
+    color: white;
+}
+
+.apphead{
+    font-size: 16px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+.primo{
+    display: flex;
+    justify-content: center;
+}
+
+.primo img{
+    width: 464px;
+    height:205px
+}
+
+
+.primo_cards{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.primocard{
+    width: 352px;
+    height: 160px;
+    border-radius: 20px;
+    padding: 24px;
+    background-image: linear-gradient(to right, rgb(38, 72, 153), rgb(125, 70, 134));
+    font-family: 'Montserrat', sans-serif;
+}
+
+.primocard h2{
+    font-size: 22px;
+}
+
+.primocard p{
+    margin-top: 15px;
+    font-size: 13px;
+}
+
+.primocard1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: white;
+
+}
+
+.primocard2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: white;
+
+}
+
+.primocard3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: white;
+}
+
+.partner{
+    width: 1200px;
+    height: 320;
+    margin-left: 10%;
+    margin-top: 200px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.partner h2{
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.rtc{
+    display: flex;
+    justify-content: space-between;
+    height: 45px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.rtc h3{
+    margin-top: 20px;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.rtc button{
+    padding:9.6px 24px;
+    font-size: 16px;
+    border-radius: 1rem;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px soild rgb(170, 170, 170);
+}
+
+.rtc_logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.rtc_logo img{
+    width: 96px;
+    height: 96px;
+}
+
+.rtc_logo h4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bus_operators{
+    width: 1200px;
+    margin-left: 10%;
+    margin-top: 80px;
+}
+
+.private{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.private h2{ 
+    font-size: 28px;
+    font-weight: 100;
+}
+
+.private button{
+    padding:9.6px 24px;
+    border-radius: 1rem;
+    font-size: 16px;
+    border: 1px soild rgb(170, 170, 170);
+    font-family: 'Montserrat', sans-serif;
+}
+.operator_name{
+    display:grid;
+    grid-template-columns: repeat(6,1fr);
+    column-gap: 40px;
+    row-gap: 5px;
+    margin-top: 50px;
+}
+
+.operator{
+    width: 176px;
+    height: 55px;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    border-radius: 4.25rem;
+    display: flex;
+    align-items: center;
+    padding: 1rem 0.5rem;
+}
+
+.operator:hover{
+    background-color: #d6d4d4;
+}
+
+.operator a{
+    text-decoration: none;
+    color: rgb(29, 29, 29);
+}
+
+.faq{
+    width: 1200px;
+    margin-left: 10%;
+    margin-top: 150px;
+}
+
+.faq h2{
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.booking_options{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 40px 0 10px 0;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.option1{
+    height: 50px;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    color:red;
+    border-bottom: 3px solid red;
+}
+
+.question{
+    width: 1200px;
+    height: 78px;
+    padding: 28px 24px;
+    border: 1px solid rgb(243, 244, 249);
+    margin: 20px 20px 20px 0;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.question1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question4{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question5{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question6{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question7{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question8{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.global{
+    width: 1200px;
+    margin-left: 10%;
+    margin-top: 100px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.globalhead{
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.countries{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.country img{
+    width: 128px;
+    height: 128px;
+}
+
+.country_name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.up{
+    width: 1200px;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    margin-left: 10%;
+    margin-top: 75px;
+}
+
+.up button{
+    width: 40px;
+    height: 56px;
+    border-radius: 16px;
+    border: 1px solid #3e3e52;
+}
+
+.up img{
+    width: 16px;
+    height: 18px;
+    animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float{
+    0%{
+        transform:translateY(0px);
+    }
+    50%{
+        transform:translateY(10px);
+    }
+    100%{
+        transform:translateY(0px);
+    }
+}
+
+.footer{
+    background-color: #F7F7F7;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer_content{
+    width: 1200px;
+    margin-left: 10%;
+    padding-top: 50px;
+}
+
+.list_top{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.list_top a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    color: #3e3e52;
+}
+
+.link_rtc{
+    margin: 10px 10px 10px 0;
+}
+
+.list_bottom{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.list_bottom a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    color: #3e3e52;
+}
+
+.about{
+    margin: 10px 10px 10px 0;
+}
+
+.list6div{
+    width: 272px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #3e3e52;
+}
+
+.copy{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px 20px 0;
+    font-size: 14px;
+    color: #3e3e52;
+}
+
+.social{
+    display: flex;
+    gap:20px
+}
+
+@media only screen and (max-width:600px) {
+     .navbar, .navdiv, .destinations, .from, .off, .calndr, .search, .offers, .adflyer, .more, .options,.tagline, .enjoy, .rate, .rating, .store,.download, .app, .primo, .primo_cards, .partner, .rtc_logo, .bus_operators, .private, .operator_name, .operator, .faq, .booking_options, .questions, .question, .global, .countries, .up, .footer, .footer_content, .list_top, .list_bottom, .copy, .social{
+        flex-direction: column;
+        width: 100%;
+    }
+}
